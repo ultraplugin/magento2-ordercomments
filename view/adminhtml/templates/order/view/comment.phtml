@@ -1,0 +1,32 @@
+<?php
+/**
+ * UltraPlugin
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the ultraplugin.com license that is
+ * available through the world-wide-web at this URL:
+ * https://ultraplugin.com/end-user-license-agreement
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ *
+ * @category    UltraPlugin
+ * @package     Ultraplugin_OrderComment
+ * @copyright   Copyright (c) UltraPlugin (https://ultraplugin.com/)
+ * @license     https://ultraplugin.com/end-user-license-agreement
+ */
+/** @var \Magento\Sales\Block\Adminhtml\Order\View $block */
+?>
+<?php if ($comment = $block->getOrder()->getUpOrderComment()): ?>
+    <section class="admin__page-section up-order-comment">
+        <div class="admin__page-section-title">
+            <span class="title"><?= $block->escapeHtml(__('Order Comment')) ?></span>
+        </div>
+        <div class="admin__page-section-content">
+            <span><?= $block->escapeHtml(nl2br($comment)); ?></span>
+        </div>
+    </section>
+<?php endif; ?>

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * UltraPlugin
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the ultraplugin.com license that is
+ * available through the world-wide-web at this URL:
+ * https://ultraplugin.com/end-user-license-agreement
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ *
+ * @category    UltraPlugin
+ * @package     Ultraplugin_ChatGpt
+ * @copyright   Copyright (c) UltraPlugin (https://ultraplugin.com/)
+ * @license     https://ultraplugin.com/end-user-license-agreement
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <up_order_comment>
+            <general>
+                <enable>1</enable>
+                <comment_label>Do you have any comments?</comment_label>
+                <comment_placeholder_text>Enter your comments...</comment_placeholder_text>
+                <show_in_account>1</show_in_account>
+            </general>
+        </up_order_comment>
+    </default>
+</config>

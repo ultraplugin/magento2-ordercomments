@@ -22,10 +22,10 @@
  -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <type name="Magento\Checkout\Model\GuestPaymentInformationManagement">
-        <plugin name="up_save_order_comment_guest" type="Ultraplugin\OrderComment\Plugin\Model\Checkout\GuestPaymentInformationManagement" sortOrder="10"/>
+        <plugin name="up_save_order_comment_guest" type="Ultraplugin\OrderComment\Plugin\Model\Checkout\GuestPaymentInformationManagementPlugin" sortOrder="10"/>
     </type>
     <type name="Magento\Checkout\Model\PaymentInformationManagement">
-        <plugin name="up_save_order_comment" type="Ultraplugin\OrderComment\Plugin\Model\Checkout\PaymentInformationManagement" sortOrder="20"/>
+        <plugin name="up_save_order_comment" type="Ultraplugin\OrderComment\Plugin\Model\Checkout\PaymentInformationManagementPlugin" sortOrder="20"/>
     </type>
     <virtualType name="Magento\Sales\Model\ResourceModel\Order\Grid">
         <arguments>
